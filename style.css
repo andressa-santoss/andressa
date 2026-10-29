@@ -379,14 +379,17 @@ h1 {
 
 .sk {
   height: 200px;
+  border: 2px solid var(--cream);
   padding: 24px;
 
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 
-  border: 2px solid var(--cream);
   color: var(--ink);
+  text-align: center;
+
   transition: transform .15s ease;
 }
 
@@ -395,6 +398,10 @@ h1 {
 }
 
 .sk span {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
   font-family: var(--f-mono);
   font-weight: 700;
   font-size: 14px;
@@ -404,13 +411,17 @@ h1 {
 .sk strong {
   font-family: var(--f-black);
   font-weight: 400;
-  font-size: 52px;
+  font-size: clamp(22px, 2.8vw, 42px);
   letter-spacing: -.02em;
   line-height: 1;
+
+  text-align: center;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .sk strong.sm {
-  font-size: 34px;
+  font-size: clamp(20px, 2.5vw, 34px);
 }
 
 /* Card SEMPRE APRENDENDO */
