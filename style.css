@@ -1462,3 +1462,228 @@ img {
     font-size: clamp(36px, 10vw, 55px);
   }
 }
+
+
+/* =========================================
+   CORREÇÃO MOBILE — PORTFÓLIO
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* ESTRUTURA GERAL */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: clip;
+  }
+
+  .pad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* HEADER */
+
+  header {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 70px;
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .logo {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: clamp(12px, 3.4vw, 16px);
+  }
+
+  .logo .sobrenome {
+    margin-left: 4px;
+  }
+
+  .logo b {
+    font-size: inherit;
+  }
+
+  .btn-h {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    order: 3;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  /* HOME */
+
+  .hero {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding-top: 48px;
+    padding-bottom: 70px;
+    gap: 30px;
+  }
+
+  .hero > div {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 9.2vw, 55px);
+    line-height: 1;
+    letter-spacing: -.045em;
+  }
+
+  /* TEXTO FRONT-END / FREELANCE */
+
+  .hero h1.typing {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: clamp(26px, 8vw, 48px);
+    max-width: 100%;
+  }
+
+  .typing .hl {
+    min-width: 0;
+    max-width: calc(100% - 15px);
+    padding: 4px 6px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+
+  .typing .cursor {
+    width: 3px;
+    flex-shrink: 0;
+  }
+
+  /* INTRODUÇÃO */
+
+  .hero .row {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 45px;
+  }
+
+  .intro {
+    width: 100%;
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .intro p {
+    font-size: clamp(17px, 4.5vw, 21px);
+    line-height: 1.5;
+  }
+
+  /* BOTÕES */
+
+  .btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btns .btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 12px;
+    font-size: clamp(12px, 3.5vw, 16px);
+    text-align: center;
+  }
+
+  /* FOTO */
+
+  .photo {
+    width: min(300px, 85%);
+    height: auto;
+    aspect-ratio: 340 / 380;
+    margin: 30px auto 0;
+  }
+
+  .sticker {
+    width: 90px;
+    height: 90px;
+    left: -15px;
+    font-size: 18px;
+  }
+
+  /* SKILLS */
+
+  .skills .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .sk {
+    min-width: 0;
+    height: 145px;
+    padding: 12px;
+  }
+
+  .sk strong,
+  .sk strong.sm {
+    font-size: clamp(12px, 3.5vw, 20px);
+    white-space: nowrap;
+  }
+
+  .sk.more strong {
+    font-size: clamp(12px, 3.2vw, 18px);
+    white-space: normal;
+  }
+
+  /* PROJETOS */
+
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .project-card {
+    min-width: 0;
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-content h3 {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
+  /* CONTATO */
+
+  .contact h2 {
+    font-size: clamp(36px, 10vw, 60px);
+    overflow-wrap: anywhere;
+  }
+}
