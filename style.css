@@ -101,6 +101,35 @@ header {
   font-weight: 400;
 }
 
+.photo {
+  position: relative;
+  overflow: visible;
+}
+
+/* Foto de perfil */
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+/* Animação ao passar o mouse */
+.photo:hover .profile-img {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Animação do selo OLÁ! */
+.sticker {
+  transition: transform 0.3s ease;
+}
+
+.photo:hover .sticker {
+  transform: rotate(12deg) scale(1.08);
+}
+
 nav {
   display: flex;
   gap: 36px
