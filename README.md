@@ -113,7 +113,7 @@ Busco aprimorar continuamente minhas habilidades, desenvolver projetos e criar s
 
 - **LinkedIn:** [Andressa Santos](https://www.linkedin.com/in/andressa-santos-ab2881169)
 - **GitHub:** [@andressa-santoss](https://github.com/andressa-santoss)
-- **Portfólio:** [Acessar site](https://andressa-santoss.github.io/)
+- **Portfólio:** [Acessar site](https://andressa-santoss.github.io/andressa/)
 
 ---
 
