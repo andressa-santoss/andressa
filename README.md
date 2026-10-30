@@ -6,7 +6,7 @@ O objetivo é reunir meus trabalhos em uma interface moderna, interativa e respo
 
 ## 🌐 Acesse o portfólio
 
-**[Visualizar portfólio online](https://andressa-santoss.github.io/)**
+**[Visualizar portfólio online](https://andressa-santoss.github.io/andressa/)**
 
 ## ✨ Funcionalidades
 
